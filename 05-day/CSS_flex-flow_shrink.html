@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.4-flex-container-item.html</title>
+
+    <style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+      }
+
+      .main-container {
+        border: 4px solid aqua;
+        display: inline-flex;
+        flex-flow: row-reverse wrap-reverse ;
+         /* block level flex container */
+      }
+
+      .item {
+        color: bisque;
+        font-size: 1rem;
+        padding: 0.75rem;
+        text-align: center;
+        
+      }
+
+      .item-1 {
+        background-color:maroon;
+        flex-shrink: 10;
+      }
+
+      .item-2 {
+        background-color:darkgray;
+      }
+
+      .item-3 {
+        background-color:skyblue;
+      }
+
+      .item-4 {
+        background-color:tan;
+      }
+
+      .item-5 {
+        background-color:mistyrose;
+      }
+      
+      .item-6 {
+        background-color:yellowgreen;
+      }
+
+      .item-7 {
+        background-color:rgb(red, green, blue);
+      }
+
+      .item-8 {
+        background-color:khaki;
+      }
+
+      .item-9 {
+        background-color: peru;
+      }
+      
+      .item-10 {
+        background-color:violet;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <div class="item item-1">A</div>
+      <div class="item item-2">B</div>
+      <div class="item item-3">C</div>
+      <div class="item item-4">D</div>
+      <div class="item item-5">E</div>
+      <div class="item item-6">F</div>
+      <div class="item item-7">G</div>
+      <div class="item item-8">H</div>
+      <div class="item item-9">I</div>
+      <div class="item item-10">J</div>
+    </div>
+    
+  </body>
+  
+</html>
