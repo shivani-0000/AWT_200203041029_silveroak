@@ -1,0 +1,65 @@
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" />
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      
+      <style type="text/css">
+		.ui-widget-header {
+            background:rgb(240, 240, 152);
+            border: 1px solid Gray;
+            color: #000000;
+            font-weight: bold;
+         }
+         .ui-widget-content {
+            background: rgb(73, 3, 3);
+            border: 1px solid #DDDDDD;
+            color: #636060;
+         }
+		 .MyCls{background-color:#460346;color:#FFFFFF}
+         #Sky9Students { 
+            width: 200px; 
+            height: 200px; 
+            padding: 10px; 
+            margin: 0px 5px 10px 0; 
+         }
+         
+         #Sky9{ 
+            width: 250px;
+            height: 250px;
+            padding: 10px; 
+            margin: 10px;  
+         }
+      </style>
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+		  
+              $("#Sky9Students").draggable();
+
+              $("#Sky9").droppable({ 
+                  accept: "#Sky9Students",
+                  drop:function(event, ui) {
+                      $(this).addClass("MyCls").find("p").html("oopss");
+					  
+                  }
+              });
+			  
+          });
+      </script>
+   </head>
+   
+   <body>
+         <div id="Sky9Students" class = "ui-widget-content">
+            <p>Hi ... I M Swati</p>
+         </div>
+         <hr/>
+         <div id="Sky9" class = "ui-widget-header">
+            <p>Welcome</p>
+         </div>
+      
+      
+   </body>
+</html>
